@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".UserDetails.EducationDetails">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/educationicon" />
+
+        <TextView
+            android:id="@+id/educationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="93dp"
+            android:text="Education"
+            android:textColor="@android:color/background_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/college_uni"
+            android:layout_width="300dp"
+            android:layout_height="72dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="138dp"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/error_appearance"
+            app:hintTextAppearance="@style/HintText">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/educationText"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#000"
+                android:hint="College/University"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/subject"
+            android:layout_width="300dp"
+            android:layout_height="76dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="218dp"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/error_appearance"
+            app:hintTextAppearance="@style/HintText">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/organisation"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#000"
+                android:hint="Subject"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/locationEducation"
+            android:layout_width="300dp"
+            android:layout_height="76dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="301dp"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/error_appearance"
+            app:hintTextAppearance="@style/HintText">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subject"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#000"
+                android:hint="Locaton"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Spinner
+            android:id="@+id/startYearEdu"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="380dp"
+            android:entries="@array/year_arrays"
+            android:prompt="@string/year_prompt" />
+
+        <Spinner
+            android:id="@+id/endYearEdu"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+
+            android:layout_below="@+id/startYearEdu"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="328dp"
+            android:layout_marginTop="10dp"
+            android:entries="@array/year_arrays"
+            android:prompt="@string/year_prompt" />
+
+
+    <Button
+        android:id="@+id/save_btn_educationDetail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="510dp"
+        android:background="@drawable/button_blue"
+        android:text="Save"
+        android:textColor="#fff" />
+    </RelativeLayout>

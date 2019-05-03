@@ -5,29 +5,31 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorWhite"
-    tools:context=".PersonDetails">
+    tools:context=".UserDetails.PersonDetails">
 
-    <ImageButton
 
+    <com.mikhaellopez.circularimageview.CircularImageView
         android:id="@+id/profilePic"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width = "80dp"
+        android:layout_height = "80dp"
+        android:src = "@drawable/cameraicon"
+        android:scaleType="centerInside"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:adjustViewBounds="true"
-        android:background="@null"
-        android:scaleType="fitCenter"
-        android:src="@drawable/cameraicon" />
+        app:civ_border_color = "#EEEEEE"
+        app:civ_border_width = "4dp"
+        app:civ_shadow = "true"
+        app:civ_shadow_radius = "10"
+        app:civ_shadow_color = "@color/colorBlue"/>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/full_name"
         android:layout_width="300dp"
         android:layout_height="72dp"
 
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="99dp"
         app:errorEnabled="true"
         app:errorTextAppearance="@style/error_appearance"
         app:hintTextAppearance="@style/HintText">
@@ -35,7 +37,7 @@
         <android.support.design.widget.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/profilePic"
+            android:layout_below="@+id/textView3"
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="8dp"
             android:layout_marginTop="8dp"
@@ -160,13 +162,24 @@
     </android.support.design.widget.TextInputLayout>
 
     <Button
-        android:id="@+id/save_btn"
-        android:layout_width="wrap_content"
+        android:id="@+id/save_btn_personalDetail"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="18dp"
+        android:background="@drawable/button_blue"
         android:text="Save"
-        android:textColor="#fff"
-        android:background="@drawable/button_blue"/>
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePic"
+        android:layout_centerHorizontal="true"
+        android:text="Personal Details"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 </RelativeLayout>

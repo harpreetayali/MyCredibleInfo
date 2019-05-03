@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfilesEdits.PersonalEdit">
+
+    <EditText
+        android:id="@+id/degree_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:ems="10"
+        android:hint="Degree"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/edu_college_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="134dp"
+        android:ems="10"
+        android:hint="College"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edu_start_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="201dp"
+        android:ems="10"
+        android:hint="Start date"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edu_end_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="246dp"
+        android:ems="10"
+        android:hint="End date"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edu_location_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="180dp"
+        android:ems="10"
+        android:hint="Location"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/updateEducation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/degree_edit"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="86dp"
+        android:background="@drawable/button_blue"
+        android:text="Update"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/deleteEducation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/degree_edit"
+        android:layout_alignTop="@+id/updateEducation"
+        android:background="@drawable/button_blue"
+        android:text="Delete"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>

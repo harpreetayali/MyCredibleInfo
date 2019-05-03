@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+
+    <TextView
+        android:id="@+id/edu_degree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="48dp"
+        android:text="Degree: "
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/edu_degree_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edu_start_txt"
+        android:layout_alignTop="@+id/edu_degree"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/edu_college"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/edu_degree"
+        android:layout_marginTop="91dp"
+        android:text="College: "
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/edu_college_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edu_degree_txt"
+        android:layout_alignTop="@+id/edu_college"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/edu_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/edu_degree"
+        android:layout_marginTop="136dp"
+        android:text="Start date: "
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/edu_start_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/edu_start"
+        android:layout_marginRight="113dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/edu_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/edu_degree"
+        android:layout_marginTop="181dp"
+        android:text="End date: "
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/edu_end_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edu_degree_txt"
+        android:layout_alignTop="@+id/edu_end"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingEducationEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/colorBlue"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <TextView
+        android:id="@+id/edu_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/edu_degree"
+        android:layout_marginTop="227dp"
+        android:text="Location: "
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/edu_location_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edu_degree_txt"
+        android:layout_alignTop="@+id/edu_location"
+        android:text="TextView"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/addEduBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/floatingEducationEdit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="132dp"
+        android:background="@drawable/button_blue"
+        android:text="Add"
+        android:textColor="@color/colorWhite" />
+
+</RelativeLayout>

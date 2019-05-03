@@ -3,7 +3,7 @@
     package="com.example.harpreetsingh.mycredibleinfo">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -12,15 +12,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".PersonDetails"></activity>
+        <activity android:name=".UserDetails.PersonDetails" />
+        <activity android:name=".UserDetails.ProfessionalDetails" />
+        <activity android:name=".UserDetails.EducationDetails" />
+        <activity
+            android:name=".UserProfile"
+            android:label="@string/title_activity_user_profile"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ProfilesEdits.PersonalEdit" />
+        <activity android:name=".ProfilesEdits.EducationEdit"></activity>
+        <activity android:name=".ProfilesEdits.ProfessionalEdit"></activity>
     </application>
 
 </manifest>

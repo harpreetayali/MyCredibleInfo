@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfile">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="54dp"
+        android:text="Organisation: "
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pro_organisation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginRight="86dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginTop="105dp"
+        android:text="Designation: "
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pro_designation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pro_organisation"
+        android:layout_alignTop="@+id/textView9"
+        android:text="TextView"
+
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginTop="155dp"
+        android:text="Start Date: "
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pro_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pro_organisation"
+        android:layout_alignTop="@+id/textView11"
+        android:text="TextView"
+
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_marginTop="203dp"
+        android:text="End Date: "
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pro_end_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pro_organisation"
+        android:layout_alignTop="@+id/textView13"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/addProBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/floatingProfessionalEdit"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_blue"
+        android:text="Add"
+        android:textColor="@color/colorWhite" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingProfessionalEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginRight="30dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/colorBlue"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+</RelativeLayout>
